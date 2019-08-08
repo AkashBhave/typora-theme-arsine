@@ -1,10 +1,15 @@
-# Ursine
+# Arsine
+
+This a modified version of [@aCluelessDanny](https://github.com/aCluelessDanny)'s [Ursine](https://github.com/aCluelessDanny/typora-theme-ursine) theme for the Typora editor.
 
 A theme for the wonderful [Typora](https://typora.io), inspired by [Bear](https://bear.app)'s colors and elegancy.
 
 ![thumbnail](images/thumbnail.png)
 
-Uses *Avenir Next LT Pro* and *Adelle* fonts, & the colors are based on Bear's *Red Graphite* and *Dark Graphite* themes.
+Uses the *Input* font family, & the colors are based on Bear's *Red Graphite* and *Dark Graphite* themes.
+- *Input Sans* for paragraphs
+- *Input Serif* for headings
+- *Input Mono* for code blocks
 
 Code fence themes are adapted from CodeMirror's *3024 Day* and *Dracula* themes for Ursine Polar and Umbra, respectively.
 
@@ -12,7 +17,7 @@ Code fence themes are adapted from CodeMirror's *3024 Day* and *Dracula* themes 
 
 ## Installation
 
-Decompress the latest release from [here](https://github.com/aCluelessDanny/typora-theme-ursine/releases). In Typora's preferences windows, go to `General -> Themes` and click on `Open Theme Folder`. Drop all the decompressed files and folders in there, and enjoy!~
+Decompress the latest release from [here](https://github.com/aCluelessDanny/typora-theme-ursine/releases). In Typora's preferences windows, go to `General -> Themes` and click on `Open Theme Folder`. Drop all the decompressed files and folders in there, and enjoy!
 
 *Note:* If you require using Cyrillic-compatible fonts, then download the Cyrillic variant found in the release instead.
 
@@ -21,14 +26,14 @@ Decompress the latest release from [here](https://github.com/aCluelessDanny/typo
 <details>
 <summary>Click here to preview themes</summary>
 
-Ursine Polar | Ursine Umbra
-:---:|:---:
-![Polar Preview 1](images/polar-1.png) | ![Umbra Preview 1](images/umbra-1.png)
-![Polar Preview 2](images/polar-2.png) | ![Umbra Preview 2](images/umbra-2.png)
-![Polar Preview 3](images/polar-3.png) | ![Umbra Preview 3](images/umbra-3.png)
-![Polar Splashscreen](images/polar-splashscreen.png) | ![Umbra Splashscreen](images/umbra-splashscreen.png)
-![Polar Source Code Preview](images/polar-source.png) | ![Umbra Source Code Preview](images/umbra-source.png)
-![Polar Unibody Preview](images/polar-unibody.png) | ![Umbra Unibody Preview](images/umbra-unibody.png)
+|                     Ursine Polar                      |                     Ursine Umbra                      |
+| :---------------------------------------------------: | :---------------------------------------------------: |
+|        ![Polar Preview 1](images/polar-1.png)         |        ![Umbra Preview 1](images/umbra-1.png)         |
+|        ![Polar Preview 2](images/polar-2.png)         |        ![Umbra Preview 2](images/umbra-2.png)         |
+|        ![Polar Preview 3](images/polar-3.png)         |        ![Umbra Preview 3](images/umbra-3.png)         |
+| ![Polar Splashscreen](images/polar-splashscreen.png)  | ![Umbra Splashscreen](images/umbra-splashscreen.png)  |
+| ![Polar Source Code Preview](images/polar-source.png) | ![Umbra Source Code Preview](images/umbra-source.png) |
+|  ![Polar Unibody Preview](images/polar-unibody.png)   |  ![Umbra Unibody Preview](images/umbra-unibody.png)   |
 
 </details>
 
