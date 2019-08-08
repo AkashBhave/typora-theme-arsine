@@ -89,7 +89,7 @@ sup.md-footnote {
 #write > p {
   &:first-child:not(:only-child)::before,
   &:only-child::before {
-    background: url('ursine/day.png') no-repeat 55% 90% transparent;
+    // background: url('ursine/day.png) no-repeat 55% 90% transparent;
     background-size: cover;
   }
 }

@@ -2,16 +2,12 @@
 
 // SCSS VARIABLES //
 
-$paragraph-font: "'Avenir Next LT Pro', 'Lato', sans-serif";
-$header-font: "'Adelle', 'Times New Roman', serif";
-$monospace-font: "'Cousine', 'Consolas', monospace";
+$paragraph-font: "'Input Sans', 'Lato', sans-serif";
+$header-font: "'Input Serif', 'Times New Roman', serif";
+$monospace-font: "'Input Mono', 'Consolas', monospace";
 
 // Cyrillic font support
 $cyrillic-support: false !default;
-@if $cyrillic-support {
-  $paragraph-font: "'Avenir Next Cyr', 'Lato', sans-serif";
-  $header-font: "'Adelle Cyrillic', 'Times New Roman', serif";
-}
 
 $bg-color: #1e2022 !default;
 $text-color: #ddd !default;
@@ -53,135 +49,92 @@ $megamenu-button-border-color: #9292928f !default;
 
 // FONT-FACES //
 
-@if $cyrillic-support {         // Cyrillic font-faces
-  // Avenir Next Cyr provided by Adrian Frutiger and Akira Kobayashi.
-  // Downloaded from `https://www.cufonfonts.com/font/avenir-next-cyr`
-  @font-face {
-    font-family: "Avenir Next Cyr";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Avenir Next Cyr Regular"), url("./ursine/AvenirNextCyr-Regular.woff") format("woff");
-  }
+// Input provided by The Font Bureau, Inc.
+// Downloaded from `https://input.fontbureau.com/download/`
 
-  @font-face {
-    font-family: "Avenir Next Cyr";
-    font-style: italic;
-    font-weight: normal;
-    src: local("Avenir Next Cyr Italic"), url("./ursine/AvenirNextCyr-Italic.woff") format("woff");
-  }
-
-  @font-face {
-    font-family: "Avenir Next Cyr";
-    font-style: normal;
-    font-weight: bold;
-    src: local("Avenir Next Cyr Demi"), url("./ursine/AvenirNextCyr-Demi.woff") format("woff");
-  }
-
-  @font-face {
-    font-family: "Avenir Next Cyr";
-    font-style: italic;
-    font-weight: bold;
-    src: local("Avenir Next Cyr DemiItalic"), url("./ursine/AvenirNextCyr-DemiItalic.woff") format("woff");
-  }
-
-  // Adelle Cyrillic provided by Veronika Burian and Jos Scaglione
-  // Downloaded from `https://www.cufonfonts.com/font/adelle-cyrillic`
-  @font-face {
-    font-family: "Adelle Cyrillic";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Adelle Cyrillic Light"), url("./ursine/AdelleCyrillic-Light.woff") format("woff");
-  }
-
-  @font-face {
-    font-family: "Adelle Cyrillic";
-    font-style: italic;
-    font-weight: normal;
-    src: local("Adelle Cyrillic Light Italic"), url("./ursine/AdelleCyrillic-LightItalic.woff") format("woff");
-  }
-
-  @font-face {
-    font-family: "Adelle Cyrillic";
-    font-style: normal;
-    font-weight: bold;
-    src: local("Adelle Cyrillic SemiBold"), url("./ursine/AdelleCyrillic-SemiBold.woff") format("woff");
-  }
-
-  @font-face {
-    font-family: "Adelle Cyrillic";
-    font-style: italic;
-    font-weight: bold;
-    src: local("Adelle Cyrillic SemiBold Italic"), url("./ursine/AdelleCyrillic-SemiBoldItalic.woff") format("woff");
-  }
-} @else {               // Normal font-faces
-  // Avenir Next LT Pro provided by Adrian Frutiger and Akira Kobayashi.
-  // Downloaded from `https://www.cufonfonts.com/font/avenir-next-lt-pro`
-  @font-face {
-    font-family: 'Avenir Next LT Pro';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Avenir Next LT Pro Regular'), url('./ursine/AvenirNextLTPro-Regular.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Avenir Next LT Pro';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Avenir Next LT Pro It'), url('./ursine/AvenirNextLTPro-Italic.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Avenir Next LT Pro';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Avenir Next LT Pro Demi'), url('./ursine/AvenirNextLTPro-Demi.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Avenir Next LT Pro';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Avenir Next LT Pro DemiIt'), url('./ursine/AvenirNextLTPro-DemiItalic.woff') format('woff');
-  }
-
-  // Adelle provided by Veronika Burian and Jos Scaglione
-  // Downloaded from `https://www.cufonfonts.com/font/adelle`
-  @font-face {
-    font-family: 'Adelle';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Adelle Light'), url('./ursine/Adelle-Light.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Adelle';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Adelle Light Italic'), url('./ursine/Adelle-LightItalic.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Adelle';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Adelle SemiBold'), url('./ursine/Adelle-SemiBold.woff') format('woff');
-  }
-
-  @font-face {
-    font-family: 'Adelle';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Adelle SemiBold Italic'), url('./ursine/Adelle-SemiBoldItalic.woff') format('woff');
-  }
+// Input Sans
+@font-face {
+	font-family: 'Input Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Input Sans'), url('./ursine/fonts/InputSans-Regular.ttf') format('truetype');
 }
 
-// Cousine provided by Steve Matteson from Google Fonts
-// Downloaded from `https://fonts.google.com/specimen/Cousine`
 @font-face {
-  font-family: 'Cousine';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Cousine Regular'), url('./ursine/Cousine-Regular.woff') format('woff');
+	font-family: 'Input Sans';
+	font-style: italic;
+	font-weight: normal;
+	src: local('Input Sans'), url('./ursine/fonts/InputSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Input Sans';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Input Sans'), url('./ursine/fonts/InputSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Input Sans';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Input Sans'), url('./ursine/fonts/InputSans-BoldItalic.ttf') format('truetype');
+}
+// Input Serif
+@font-face {
+	font-family: 'Input Serif';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Input Serif'), url('./ursine/fonts/InputSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Input Serif';
+	font-style: italic;
+	font-weight: normal;
+	src: local('Input Serif'), url('./ursine/fonts/InputSerif-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Input Serif';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Input Serif'), url('./ursine/fonts/InputSerif-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Input Serif';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Input Serif'), url('./ursine/fonts/InputSerif-BoldItalic.ttf') format('truetype');
+}
+// Input Mono
+@font-face {
+	font-family: 'Input Mono';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Input Mono'), url('./ursine/fonts/InputMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Input Mono';
+	font-style: italic;
+	font-weight: normal;
+	src: local('Input Mono'), url('./ursine/fonts/InputMono-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Input Mono';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Input Mono'), url('./ursine/fonts/InputMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Input Mono';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Input Mono'), url('./ursine/fonts/InputMono-BoldItalic.ttf') format('truetype');
 }
 
 // IMPORTS //
@@ -949,7 +902,7 @@ footer.ty-footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('ursine/night.png') no-repeat 45% 90% transparent;
+    // background: url('ursine/night.png') no-repeat 45% 90% transparent;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
